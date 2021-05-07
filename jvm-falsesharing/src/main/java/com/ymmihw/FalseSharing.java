@@ -1,10 +1,10 @@
 package com.ymmihw;
 
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.*;
 
 @State(Scope.Benchmark)
+@Fork(2)
+@Threads(16)
 public class FalseSharing {
 
   private java.util.concurrent.atomic.LongAdder builtin =
