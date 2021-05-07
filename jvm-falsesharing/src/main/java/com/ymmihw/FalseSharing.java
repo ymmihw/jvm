@@ -20,4 +20,10 @@ public class FalseSharing {
   public void custom() {
     custom.increment();
   }
+
+  @Benchmark
+  @Fork(jvmArgs = "-XX:-RestrictContended")
+  public void customRestrictContended() {
+    custom.increment();
+  }
 }
