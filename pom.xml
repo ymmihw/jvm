@@ -9,6 +9,7 @@
     <modules>
         <module>jvm-exception</module>
         <module>jvm-falsesharing</module>
+        <module>jvm-tiered-compilation</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -16,6 +17,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
         <jmh.version>1.30</jmh.version>
     </properties>
     <dependencyManagement>

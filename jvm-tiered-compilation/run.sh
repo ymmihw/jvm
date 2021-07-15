@@ -1,0 +1,1 @@
+java  -XX:+PrintCompilation -jar jvm-tiered-compilation-1.0-SNAPSHOT.jar | grep 'com.ymmihw'
